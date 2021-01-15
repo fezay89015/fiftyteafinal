@@ -1,0 +1,690 @@
+* {
+    /* border: solid 1px black;*/
+    box-sizing: border-box;
+    font-family: 'jf open 粉圓 1.1';
+    margin: 0;
+}
+
+body {
+    background-color: #fff7e8;
+    width: 100%;
+}
+
+/*f5e64a
+ 1f3f97*/
+
+/* ------nav------ */
+
+.small{
+    font-size: 100%;
+}
+
+header {
+    background-color: #f5e64a;
+    height: 10em;
+    width: 100%;
+    text-align: center;
+    top: 0;
+
+    /* --js-- */
+    position: fixed;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+header.small {
+    height: 7.5em;
+    background-color: #f5e74aec;
+    transition: 0.5s;
+}
+
+header > a {
+    display: inline-block;
+}
+
+.logo {
+    margin: 5% 0 0 0;
+
+    transition: 0.5s;
+}
+
+.logo.small {
+    margin: -2% 0 0 0;
+    transform: scale(0.6);
+
+    transition: 0.5s;
+}
+.nav-menu {
+    display: none;
+}
+nav {
+    margin: 0.5% 0 0 0;
+    transition: 0.5s;
+}
+
+nav.small {
+
+    margin: -1% 0 0 0;
+    transition: 0.5s;
+}
+
+nav li a {
+    display: block;
+    transition: 0.2s;
+    font-weight: bold;
+    color: #036;
+    padding: 0.2em 0;
+    font-size: 18px;
+    margin: 0 2.5em 0 0em;
+}
+
+nav li a:hover {
+    transition: 0.3s;
+    color: #2b6379;
+    background-color: #f9eb9d;
+}
+
+.nav{
+    display: block;
+}
+
+.list-icon > img {
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: -1.5em;
+    float: left;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.list-item-link {
+    display: block;
+    text-decoration: none;
+}
+
+/* ----------- */
+
+a {
+    color: black;
+    text-decoration: initial;
+}
+
+.block {
+    padding-top: 9.5%;
+    background: #1f3f97;
+}
+
+.drinks {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+#tab {
+    width: 100%;
+}
+/* 頁籤ul */
+#tab > ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #1f3f97;
+    display: block;
+    display: flex;
+
+    justify-content: center;
+}
+#tab > ul > li {
+    list-style-type: none;
+}
+#tab > ul > li > a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #f5e64a;
+    float: left;
+    padding: 10px 40px;
+    margin-top: 15px;
+}
+
+#tab a::before {
+    content: '';
+    position: absolute;
+    width: 4em;
+    height: 2px;
+    margin-top: 1.5em;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+}
+
+#tab a:hover::before {
+    visibility: visible;
+    transform: scaleX(1.5);
+}
+
+/* span:target */
+#tab-1:target,
+#tab-2:target,
+#tab-3:target,
+#tab-4:target,
+#tab-5:target {
+    border: solid 1px red;
+}
+
+span:target ~ #tab > div:first-of-type {
+    visibility: hidden;
+    height: 0px;
+}
+#tab > div {
+    clear: both;
+    padding: 0px 15px;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+/*頁籤變換*/
+span ~ #tab,
+#tab-1:target ~ #tab > ul li a[href$='#tab-1'],
+#tab-2:target ~ #tab > ul li a[href$='#tab-2'],
+#tab-3:target ~ #tab > ul li a[href$='#tab-3'],
+#tab-4:target ~ #tab > ul li a[href$='#tab-4'],
+#tab-5:target ~ #tab > ul li a[href$='#tab-5'] {
+    color: #e9c288;
+}
+
+/*頁籤內容顯示&第一筆*/
+span ~ #tab > div:first-of-type,
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3,
+#tab-4:target ~ #tab > div.tab-content-4,
+#tab-5:target ~ #tab > div.tab-content-5 {
+    visibility: visible;
+    height: auto;
+    display: flex;
+    background-color: #fff7e8;
+}
+
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3,
+#tab-4:target ~ #tab > div.tab-content-4,
+#tab-5:target ~ #tab > div.tab-content-5 {
+    margin-top: 50px;
+}
+
+.tab-content-1,
+.tab-content-2,
+.tab-content-3,
+.tab-content-4,
+.tab-content-5 {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tab span {
+    margin: 30px 50px;
+}
+.name {
+    font-size: 20px;
+    margin: 15px auto 0 auto;
+    padding: 10px;
+    background-color: #e9c288;
+    border-radius: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+#tab p {
+    margin: 0;
+    color: black;
+}
+.enname {
+    font-size: 16px;
+}
+.drinks span {
+    max-width: 330px;
+    display: block;
+    overflow: hidden;
+}
+
+.drinks span img {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.drinks span:hover img {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.drinks img {
+    width: 100%;
+}
+
+.drinks span > a {
+    display: block;
+    overflow: hidden;
+}
+
+span.dissa {
+    display: none;
+}
+
+footer {
+    background-color: #f5e64a;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-weight: 500;
+}
+.footer-left {
+    margin: 80px;
+}
+.footer-left img {
+    margin-bottom: 10px;
+}
+.copyright {
+    font-size: 14px;
+    color: #5e5e5e;
+    margin-left: 10px;
+}
+
+.footer-left img {
+    height: 75px;
+}
+.footer-center {
+    line-height: 25px;
+}
+.mail {
+    margin: 10px 0;
+}
+input {
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
+}
+.send {
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    font-family: 'jf open 粉圓 1.1';
+    background-color: #1f3f97;
+    color: #fff;
+    border: none;
+}
+.send:hover {
+    background-color: #4474f7;
+    border: none;
+}
+.send:active {
+    background-color: rgb(50, 46, 255);
+}
+.footer-right {
+    text-align: center;
+    margin: 100px;
+}
+
+.icofont {
+    display: flex;
+    margin-top: 10px;
+    letter-spacing: 15px;
+}
+.icofont > a > i {
+    font-size: 36px;
+    color: #1f3f97;
+    padding: 5px;
+}
+
+.icofont i:hover {
+    transition: all 0.3s linear;
+    color: #4474f7;
+}
+
+/*新增的*/
+
+.popup-wrap {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    content: '';
+    z-index: 10;
+    background: #00000044;
+}
+.popup-box {
+    width: 65%;
+    padding: 50px 50px;
+    border: #1f3f97 3px solid;
+    transform: translate(-50%, -50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+}
+h2 {
+    font-size: 42px;
+    color: #1f3f97;
+}
+.descripe {
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 500;
+}
+.price {
+    font-size: 32px;
+    color: black;
+}
+.popicon {
+    display: flex;
+    width: 65px;
+}
+.popicon img {
+    margin: 5px;
+}
+.close-btn {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border-radius: 100%;
+    background: #1f3f97;
+    font-family: 'jf open 粉圓 1.1';
+    text-decoration: none;
+    color: #fff;
+    font-size: 42px;
+    text-align: center;
+    outline: none;
+}
+
+.transform-in,
+.transform-out {
+    display: block;
+    transition: all ease 0.5s;
+}
+
+.transform-in {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.transform-out {
+    transform: translate(-50%, -50%) scale(0.5);
+}
+.drinks button {
+    cursor: pointer;
+    max-width: 330px;
+    overflow: hidden;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    *{
+        background-color: unset;
+    }
+
+    header.Msmall {
+        height: 7.5em;
+        background-color: #f5e74aec;
+        transition: 0.5s;
+    }
+    .nav.Msmall{
+        margin: -1% 0 0 0;
+        transition: 0.5s;
+    }
+    .logo.Msmall {
+        margin: -2% 0 0 0;
+        transform: scale(0.6);
+    
+        transition: 0.5s;
+    }
+
+    .block {
+        padding-top: 20%;
+        background: #1f3f97;
+    }
+    .nav-menu {
+        display: none;
+    }
+    #tab ul {
+        width: 100%;
+    }
+    #tab span {
+        margin: 30px 15px;
+        padding: 10px;
+    }
+    .drinks span {
+        max-width: 280px;
+    }
+    .popup-box {
+        width: 90%;
+        padding: 30px;
+    }
+    footer {
+        padding: 10px 20px;
+        margin: 0;
+        height: 200px;
+        width: 100%;
+    }
+    .footer-left {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .copyright {
+        text-align: start;
+    }
+    .footer-left img {
+        width: 75px;
+        height: 60px;
+    }
+    .footer-center {
+        text-align: center;
+        margin: 0;
+    }
+
+    input {
+        width: 250px;
+        margin: 5px 0;
+    }
+    .send {
+        width: 250px;
+    }
+    .footer-right {
+        text-align: center;
+        margin: 0px;
+        padding: 0;
+    }
+    .icofont > a > i {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 480px) {
+
+    *{
+        background-color: unset;
+    }
+
+    header {
+        height: 7em;
+        display: flex;
+        padding: 1em;
+    }
+    header.Ssmall {
+        height: 4em;
+        display: flex;
+    }
+    .nav.Ssmall{
+        height: 2em;
+    }
+    .nav-menu {
+        display: block;
+        font-size: 2em;
+        position: absolute;
+        padding: 5px 13px;
+        top: 20px;
+        right: 15px;
+        color: #fff;
+        transition: .6s;
+    }
+
+    .nav-menu.Ssmall{
+        top: 5px;
+    }
+
+    .nav__menu:hover {
+        border-radius: 4px;
+        background-color: #1f3f97b4;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        margin: 0;
+        padding: 0;
+        background-color: #f5e64a;
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    .menu-click {
+        display: inline-flex;
+    }
+    .list-item {
+        list-style: none;
+    }
+    .list-icon {
+        margin-right: 10px;
+    }
+    .list-item {
+        display: block;
+        display: flex;
+        width: 100%;
+        color: #1f3f97;
+        padding: 15px 30px;
+        justify-content: left;
+    }
+
+    .logo {
+        margin: 5% 0 0 5%;
+        transition: 0.5s;
+        height: 70px;
+    }
+
+    .logo.Ssmall {
+        height: 55px;
+        margin: -12% 0px 0px -12px;
+        transform: scale(0.7);
+        transition: 0.5s;
+    }
+
+    #tab > ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #tab > ul > li > a {
+        margin: 0px 50px;
+    }
+
+    span ~ #tab,
+    #tab-1:target ~ #tab > ul li a[href$='#tab-1'],
+    #tab-2:target ~ #tab > ul li a[href$='#tab-2'],
+    #tab-3:target ~ #tab > ul li a[href$='#tab-3'],
+    #tab-4:target ~ #tab > ul li a[href$='#tab-4'],
+    #tab-5:target ~ #tab > ul li a[href$='#tab-5'] {
+        background-color: #121c7c;
+    }
+
+    .block {
+        padding-top: 30%;
+        background: #1f3f97;
+    }
+    #tab a::before {
+        width: 7em;
+        margin-top: 1.5em;
+    }
+    #tab span {
+        margin: 20px 30px;
+    }
+    .drinks span {
+        max-width: 280px;
+    }
+    .name {
+        font-size: 16px;
+        width: 200px;
+    }
+    .popup-box {
+        width: 175%;
+        padding: 30px;
+    }
+    footer {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    .footer-left {
+        margin: 0;
+        margin-left: 15px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .footer-left img {
+        width: 70px;
+        height: 55px;
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+    .footer-left p {
+        padding: 10px;
+    }
+    .copyright {
+        font-size: 11px;
+    }
+    .footer-center {
+        display: none;
+    }
+    .footer-right {
+        margin: 0;
+    }
+    .footer-right h3 {
+        display: none;
+    }
+    .icofont-twitter {
+        display: none;
+    }
+    .icofont-youtube-play {
+        display: none;
+    }
+    .icofont > a > i {
+        font-size: 28px;
+    }
+}

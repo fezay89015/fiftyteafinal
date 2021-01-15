@@ -1,0 +1,590 @@
+*{
+    max-width: 1920px;
+    box-sizing: border-box;
+    margin: 0%;
+
+
+    /* background-color: darkblue; */
+  
+}
+
+html,body{
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    background-color: unset;
+}
+@font-face {
+    font-family: jf;
+    src: url('jf-openhuninn-1.1.ttf');
+  }
+.bg{
+    margin:0; padding:0; height:100%; width:100%;
+}
+
+.all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Main_image{
+
+}
+.main_image{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+
+}
+.main_image_text{
+    max-width: 250px;
+    max-height: 200px;
+    background:hsla(19,80%,50%,0);
+    border: solid 1px white;
+    text-align: center;
+    position: relative;
+    left:42%;
+    top:-47%;
+    letter-spacing: 10px;
+    font-size: 35px;
+    font-family:jf;
+    color: #FFFBEB;
+}
+
+
+
+
+
+
+#full-size{
+    height:100%;
+    width:100%;
+    overflow: auto; /* or overflow:auto; if you want scrollbars */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0%;
+    padding: 0%;}
+.Top{
+    max-width: 100%;
+    height: 255px;
+    background-color: #f5e64a;
+}
+
+.aboutus_box{
+    width: 70%;
+    background-color: #fff7e8;
+    width: fit-content;
+    height: fit-content;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 12%;
+    
+}
+.aboutus_關於我們_box{
+text-align: center;
+width: 200px;
+align-self: center;
+margin-top: 1%;
+margin-bottom: 3%;
+}
+.aboutus_關於我們{
+    font-family: jf;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFBEB;
+    letter-spacing: 10px;
+    text-align: center;
+    padding-left:2%;
+    background-color:#AF765D;
+    border-radius: 10px;
+}
+
+.aboutus_text{
+font-family: jf;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 40px;
+letter-spacing: 0.4em;
+color: #A76324;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: stretch;
+margin-top: 4%;
+}
+
+.aboutus_text_1{
+margin-left: 7%;
+float:left;
+}
+.aboutus_text_2{
+margin-left: 12%;
+float:left;
+
+}
+
+.品牌堅持_box{
+    width: fit-content;
+    height: fit-content;
+    left: 0px;
+    background:#fff7e8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.品牌堅持_title_box{
+width: 200px;
+max-height:100px;
+align-self: center;
+margin-top: 6%;
+margin-bottom: 4%;
+}
+.品牌堅持_title{
+font-family: jf;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 44px;
+color: #FFFBEB;
+letter-spacing: 10px;
+text-align: center;
+padding-left:1.8%;
+background-color:#AF765D;
+border-radius: 10px;
+}
+.品牌堅持_text{
+font-family: jf;
+text-align: center;
+width: 800px;
+height: 117px;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 40px;
+color: #A76324;
+margin:0%;
+margin-top: 6%;
+}
+
+.main_image_2{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    
+}
+.main_image_2_text{
+    max-width: 150px;
+    max-height: 200px;
+    background:hsla(19,80%,50%,0);
+    border: solid 1px white;
+    text-align: center;
+    position: relative;
+    left:45%;
+    top:-47%;
+    letter-spacing: 10px;
+    font-size: 35px;
+    font-family:jf;
+    color: #FFFBEB;
+}
+.main_image_飲料{
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    margin-bottom: 2%;
+
+}
+.main_image_3{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
+}
+.image_3_text{
+max-width: 150px;
+max-height: 200px;
+background:hsla(19,80%,50%,0);
+border: solid 1px white;
+text-align: center;
+position: relative;
+left:45%;
+top:-47%;
+letter-spacing: 10px;
+font-size: 35px;
+font-family:jf;
+color: #FFFBEB;
+}
+.門市查詢_box{
+background: #fff7e8;
+width: fit-content;
+height: fit-content;
+left: 0px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+flex-direction: column;
+align-content: center;
+margin-top: 2%;
+}
+
+.門市查詢_title{
+letter-spacing: 6px;
+font-family: jf;
+width: 350px;
+background:#AF765D;
+border-radius: 10px;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 60px;
+color: #FFFFFF;
+text-align: center;
+padding-top: 0%;
+}
+
+.查詢{
+    
+    height: 150px;
+    align-self: center;
+    text-align: center;
+    margin-top: 20%;
+    /* position: relative;
+    top:20%;
+    left: 42%; */
+}
+.city{
+    border-radius: 10px;
+    font-family: jf;
+    color: #1e62b5;
+    margin-left: 1px;
+    background-color:#FBD3AD;
+    border:solid 2px #1e62b5;
+}
+map{
+    width: 100%;
+    height: 707px;
+}
+
+.footer{
+    background-color: #F5E64A;
+    width: 100%;
+height: 171px;
+}
+/* ipad pro------------------- */
+@media (max-width: 768px) {
+    *{
+        max-width: 768px;
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        background-color:#fff7e8;
+        /* background-color: darkblue; */
+      
+    }
+    .Top{
+        max-width: 100%;
+        height: 100px;
+        background-color: #f5e64a;
+    }
+    .main_image{
+        width: 180%;
+
+        object-fit: cover;
+    
+    }
+    .aboutus_box{
+        width: 70%;
+        background-color: #fff7e8;
+        width: fit-content;
+        height: fit-content;
+        left: 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-top: 3%;
+        margin-bottom: 1%;
+        
+    }
+    .main_image_text{
+        max-width: 250px;
+        max-height: 200px;
+        background:hsla(19,80%,50%,0);
+        border: solid 1px white;
+        text-align: center;
+        position: relative;
+        left:34.5%;
+        top:-47%;
+        letter-spacing: 10px;
+        font-size: 35px;
+        font-family:jf;
+        color: #FFFBEB;
+    }
+    .aboutus_text{
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 40px;
+        letter-spacing: 0.4em;
+        color:  #A76324;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-bottom: 5%;
+        }
+    .品牌堅持_text{
+            width: 600px;
+            height: 117px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            letter-spacing: 1px;
+            line-height: 40px;
+            color:  #A76324;
+            margin:0%;
+            margin-bottom: 5%;
+            }
+    .aboutus_text_1{
+            margin-left: 7%;
+            float:left;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            }
+    .aboutus_text_2{
+            float:left;
+            margin-bottom: 10%;
+            margin-left: 7%;
+            }
+    .main_image{
+            width: 1024px;
+            height: 600px;
+            object-fit: cover;
+            }
+    .main_image_2{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+                    
+            }
+    .main_image_2_text{
+            max-width: 150px;
+            max-height: 200px;
+            background:hsla(19,80%,50%,0);
+            border: solid 1px white;
+            text-align: center;
+            position: relative;
+            left:40%;
+            top:-47%;
+            letter-spacing: 10px;
+            font-size: 35px;
+            font-family:jf;
+            color: #FFFBEB;
+            }
+    .品牌堅持_title_box{
+            width: 200px;
+            max-height:100px;
+            align-self: center;
+            margin-top: 0%;
+            margin-bottom: 4%;
+            }
+    .main_image_3{
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            }
+    .image_3_text{
+            max-width: 150px;
+            max-height: 200px;
+            background:hsla(19,80%,50%,0);
+            border: solid 1px white;
+            text-align: center;
+            position: relative;
+            left:40%;
+            top:-47%;
+            letter-spacing: 10px;
+            font-size: 35px;
+            font-family:jf;
+            color: #FFFBEB;
+           }
+        
+  }
+
+ /* iphone------------------- */
+ 
+@media (max-width: 376px) {
+    *{
+        max-width: 376px;
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        background-color:#fff7e8;
+        /* background-color: darkblue; */
+      
+    }
+    .Top{
+        max-width: 100%;
+        height: 100px;
+        background-color: #f5e64a;
+    }
+    .main_image{
+        width: 1500px;
+        height: 500px;
+        object-fit: cover;
+    
+    }
+    .aboutus_關於我們_box{
+        text-align: center;
+        width: 145px;
+        align-self: center;
+        margin-top: 15%;
+        margin-bottom: 0%;
+        }
+    .main_image_text{
+        max-width: 250px;
+        max-height: 200px;
+        background:hsla(19,80%,50%,0);
+        border: solid 1px white;
+        text-align: center;
+        position: relative;
+        left:20%;
+        top:-47%;
+        letter-spacing: 10px;
+        font-size: 35px;
+        font-family:jf;
+        color: #FFFBEB;}
+        .aboutus_關於我們_box{
+            text-align: center;
+            width: 200px;
+            align-self: center;
+            margin-top: 1%;
+            margin-bottom: 3%;
+            }
+    .aboutus_關於我們{
+        font-family: jf;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 44px;
+        color: #FFFBEB;
+        letter-spacing: 5px;
+        text-align: center;
+        padding-left:2%;
+        background-color:#AF765D;
+        border-radius: 10px;
+        }
+    .aboutus_text{
+        width: 300px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        color: #A76324;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-left: 3%;
+        margin-bottom: 5%;
+        }
+        .main_image_2_text{
+            max-width: 150px;
+            max-height: 200px;
+            background:hsla(19,80%,50%,0);
+            border: solid 1px white;
+            text-align: center;
+            position: relative;
+            left:32%;
+            top:-47%;
+            letter-spacing: 10px;
+            font-size: 35px;
+            font-family:jf;
+            color: #FFFBEB;
+        }
+    .品牌堅持_title_box{
+        width: 200px;
+        height: 47px;
+        align-self: center;
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 10%;
+        }
+    .品牌堅持_text{
+        width: 200px;
+        height: 320px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 40px;
+        color:#A76324;
+        margin:0%;
+        margin-bottom:0%;
+        }
+        .品牌堅持_title{
+            font-family: jf;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 44px;
+            color: #FFFBEB;
+            letter-spacing: 5px;
+            text-align: center;
+            padding-left:1.8%;
+            background-color:#AF765D;
+            border-radius: 10px;
+            }
+    .main_image_飲料{
+        width: 1200px;
+        height: 800px;
+        object-fit: cover;
+        margin-bottom: 2%;
+        }
+    .main_image_3{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        }
+    .image_3_text{
+        max-width: 150px;
+        max-height: 200px;
+        background:hsla(19,80%,50%,0);
+        border: solid 1px white;
+        text-align: center;
+        position: relative;
+        left:28%;
+        top:-47%;
+        letter-spacing: 10px;
+        font-size: 35px;
+        font-family:jf;
+        color: #FFFBEB;
+        }  
+        .門市查詢_title{
+            letter-spacing: 6px;
+            font-family: jf;
+            width: 250px;
+            background:#AF765D;
+            border-radius: 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 60px;
+            color: #FFFFFF;
+            text-align: center;
+            padding-top: 0%;
+            }
+
+}
